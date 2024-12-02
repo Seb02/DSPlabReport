@@ -29,7 +29,7 @@ edges = [0, band[0] - trans_width, band[0], band[1], band[1] + trans_width, nyqu
 # Desired amplitude in each band: 0 = stopband, 1 = passband
 desired = [0, 1, 0]
 
-# Generate filter coefficients using remez
+# Generate filter coefficients
 fir_coeff = remez(numtaps, edges, desired, fs=fs)
 
 
